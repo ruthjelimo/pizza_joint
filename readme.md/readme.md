@@ -1,6 +1,6 @@
 
 ## Design
-<img src="Images/pizzzaa.png">
+<img src="images/pi.png">
 By Ruth Jelimo
 
 
