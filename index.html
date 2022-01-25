@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <title>pizza</title>
 </head>
@@ -27,224 +25,79 @@
            Delivery services offered<br>
             </b></h1>
 </div>
-
     <div class="container">
-      
             <h2><b>Our<span> Menu</b></span></h2>
-            <h3><span><i>Crispy</i></span></h3>
-
           <div class="row">
             <div class="col-4" id="crisp">
                 <img src="images/crisp.jpeg" height="200px">
-                <h3>Small<br>
-                Ksh 400/=</h3>
+                <h3><span><i>Crispy</i></span></h3>
             </div>
             <div class="col-4" id="crisp">
-                <img src="images/crisp.jpeg" height="200px">
-                <h3>
-                    Medium<br>
-                    Ksh 800/=
-                </h3>
+              <img src="images/gluten.jpg" height="200px">
+              <h3><i><span>Glutten-free</span></i></h3>
             </div>
             <div class="col-4" id="crisp">
-                <img src="images/crisp.jpeg" height="200px">
-                <h3>
-                    Large<br>
-                    Ksh 1200/=
-                </h3>
+              <img src="images/stuf.jpeg" height="200px">
+              <h3><i><span>Stuffed </span></i></h3>
             </div>
-          </div>
-
-
-
-        <div class="row">
-             <h3><i><span>Glutten-free</span></i></h3>
-          <div class="col-4" id="gluten">
-           <img src="images/gluten.jpg" height="200px">
-           <h3>
-               Small<br>
-               Ksh 400/=
-           </h3>
-          </div>
-          <div class="col-4" id="gluten">
-           <img src="images/gluten.jpg" height="200px">
-           <h3>
-               Medium<br>
-               Ksh 800/=
-           </h3>
-          </div>
-          <div class="col-4" id="gluten">
-          <img src="images/gluten.jpg" height="200px">
-          <h3>
-              Large<br>
-              Ksh 1200/=
-          </h3>
           </div>
         </div>
-        <div class="row"> 
-             <h3><i><span>Stuffed </span></i></h3>
-
-            <div class="col-4">
-              
-            <img src="images/stuf.jpeg" height="200px">
-            <h3>
-                Small<br>
-                Ksh 400/=
-            </h3>
-            </div>
-            <div class="col-4">
-                <img src="images/stuf.jpeg" height="200px">
-                <h3>
-                    Medium<br>
-                    Ksh 800/=
-                </h3>
-            </div>
-            <div class="col-4">
-                <img src="images/stuf.jpeg" height="200px">
-                <h3>
-                    Large<br>
-                    Ksh 1200/=
-                </h3>
-            </div>
+<div class="row-inputs">
+  <div class="col">
+      <form action="" class="form1" name="Name" onsubmit="validatePizza()">
+        <h5>Place Your Order here:</h5>
+        <h6>Choose crust:</h6>
+        <select id="crust" class="form-select-sm Items">
+            <option selected value=""></option>
+            <option value="0">crispy @ kshs 100</option>
+            <option value="1">stuffed @kshs 120</option>
+            <option value="2">Gluten-free @kshs 120</option>
+        </select> <br> 
+          <h6>Choose size:</h6>
+          <select id="size" class="form-select-sm Items">
+              <option selected value=""></option>
+              <option value="0">Small @Ksh 400</option>
+              <option value="1">Medium @Kshs 800</option>
+              <option value="2">Large @Kshs 1200</option>
+          </select> <br>
+         <h6> Choose  topping:</h6>
+          <select id="topping" class="form-select-sm Items">
+              <option selected value=""></option>
+              <option value="0">Bacon @ kshs.150</option>
+              <option value="1">Black olives @kshs 130</option>
+              <option value="2">Sausages @ kshs 170</option>
+          </select> <br>
+         <h6> Number of pizza </h6>
+          <input type="number" id="pizza-number" class="number"> <br>
+          <input type="radio" id="delivery">Delivered
+          <input type="radio" id="pick">Pickup<br>
+          <div id="hidden">
+              <input type="text" id="name" placeholder="Your name"> <br><br>
+              <input type="number" id="phone" placeholder="Phone number"> <br><br>
+              <input type="text" id="location" placeholder="Enter your Location"> <br><br>
           </div>
-
+          <a href=".inputs" id="button" class="btn btn-success">Check Order Details</a>
+          <button type="submit"id="Button" class="btn btn-success">Checkout</button>
+      </form>
+      <div class="row-totals">
+        <h4 id="crust">Crust:<span id="pCrust">check here</span></h4>
+          <h4 id="Size">Pizza Size:<span id="pSize">check here</span></h4>
+          <h4 id="topping">Topping:<span id="pTopping">check here</span></h4>
+          <h4 id="number">Number of Pizza:<span id="pNumber">check here</span></h4>
       </div>
-
+  </div>
 </div>
+<div class="contact" style="text-align: center;  color: black;">
+  ​   <div class="footer">
+    <p>Copyrights 2022,All Rights Reserved
+        Designed by Ruth jelimo
+    </p>
+  </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  </body>
+  </html>
 
-
-
-
-<div class="orders">
-    <h2>Make your orders here:</h2>
-       
-    <form>
-        <h2>choose the crust you would like:</h2>
-        <h2>Crispy</h2>
-        <div class="crisp">
-         <input type="radio" id="crispy" name="pizza" value="crispy">
-         <label for="crispy">large @ 1200/=</label><br>
-         <div id="crispy">
-         <input type="radio" id="crispy" name="pizza" value="crispy">
-         <label for="crispy">medium @ 800/=</label><br>
-          </div>
-         <div id="crispy">
-         <input type="radio" id="crispy" name="pizza" value="crispy">
-         <label for="crispy">small @ 400/=</label><br>
-        </div>
-         </div>
-    </form>
-    <form>
-
-        <h2>Glutten-free</h2>
-        <div class="gluten">
-         <input type="radio" id="gluten" name="pizza" value="gluten">
-         <label for="gluten">large @ 1200/=</label><br>
-         <div id="gluten">
-         <input type="radio" id="gluten" name="pizza" value="gluten">
-         <label for="gluten">medium @ 800/=</label><br>
-         </div>
-         <input type="radio" id="gluten" name="pizza" value="gluten">
-         <label for="gluten">small @ 400/=</label><br>
-         </div>
-    </form>
-    <form>
-         <h2>Stuffed</h2>
-         <div class="stuffed">
-         <input type="radio" id="stuffed" name="pizza" value="stuffed">
-         <label for="gluten">large @ 1200/=</label><br>
-         <div id="stuffed">
-         <input type="radio" id="stuffed" name="pizza" value="stuffed">
-         <label for="gluten">medium @ 800/=</label><br>
-         </div>
-         <input type="radio" id="stuffed" name="pizza" value="stuffed">
-         <label for="gluten">small @ 400/=</label><br>
-        </div>
-      </form>
-      <form>
-         <h2>choose Topping you would like we add:</h2>
-         <div class="topping">
-          <input type="radio" id="topping" name="pizza" value="Bacon">
-          <label for="Bacon"> Bacon @ 120/=</label><br>
-          <div id="topping">
-          <input type="radio" id="topping" name="pizza" value="sausage">
-          <label for="sausage">Sausage @ 150/=</label><br>
-           </div>
-          <input type="radio" id="black-olive" name="pizza" value="black-olive">
-          <label for="black-olive">Black-olive@ 200/=</label><br>
-        </div>
-      </form>
-      <form>
-        <div id="number">
-          <h2>Number of choice:</h2>
-          <label for="pizz" >Number of Pizza </label> <br>
-          <input type="number" class="form-control" id="number"  placeholder="" required  min="1"/>
-        </div>
-       </form>
-        <div class="order">
-        <button type="button" class="btn btn-primary btn-lg" style="margin-left: 50%;" id="checkout">Order</button>
-        </div>
-        <div class="totals">
-          <h3>The order we received is as follows:</h3>
-        
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Crust</th>
-      <th scope="col">Topping</th>
-      <th scope="col">Number</th>
-      <th scope="col">Total</th>
-    </tr>
-  </thead>
- <tbody id="orders">
-      <th scope="row"></th>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    </tbody>
-
-</table>
-<button type="button" class="btn btn-primary btn-lg" style="margin-left: 40%;" id="checkout">checkout</button>
-    <div class="total" id="hidden">
-      <h2>The total amount is:</h2>
-      <div id="delivery">
-        <p class="delivery hidden">
-          Delivery Cost: Ksh. 
-      </p>
-
-        <h3>Delivery option:</h3>
-       
-
-        <input type="radio" id="delivery" name="pizza" value="pickup">
-        <label for="pickup">Pickup</label><br>
          
-        <input type="radio" id="delivery" name="pizza" value="delivery">
-        <label for="delivered">Delivered</label>
-
-
-
-
-
-
-      </div>
-    </div>
-    
-   <div class="contact" style="text-align: center;  color: black;">
-    ​   <div class="footer">
-      <p>Copyrights 2022,All Rights Reserved
-          Designed by Ruth jelimo
+     
        
-      </p>
-    
-    </div> 
-
-    </div>
-</div>
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="index.js"></script>
-</body>
-</html>
