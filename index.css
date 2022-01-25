@@ -1,10 +1,8 @@
-
 .nav-bar{
     display: flex;
     float: left;
     align-items: center;
-    margin-top:-6%;
-    
+    margin-top:-6%;   
 }
 .nav-bar >ul{
     list-style: none;
@@ -35,68 +33,38 @@ span{
     text-align: center;
     padding-top: 20px;
 }
-.orders >h2{
-    text-align: center;
-    padding-top: 10px;
+.inputs{
+  
+    line-height: 10px;
 }
-form{
-    /* margin-left: 30px; */
+.form1{
     background-color: aqua;
-    width: 100%;
-    padding-left: 20px;
-}
+    text-align: center;
+} 
 
-.order{
-    padding-top: 30px;
-}
-.crisp{
-    display: flex;
-    padding: 10px;
-}
-#crip{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.gluten{
-    display: flex;
-    padding: 10px;
-}
-#gluten{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.stuffed{
-    display: flex;
-    padding: 10px;
-}
-#stuffed{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.topping{
-    display: flex;
-    padding: 10px;
-}
-#topping{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-#number{
-    padding-right: 60%;
-}
-.table{
-   margin-left: 10%;
-   
-}
-.total{
-    padding-left: 20px;
-}
-.totals{
-    padding-left: 20px;
-}
-#hidden{
+.form1 >h5{
+    padding-top: 20px;
+  }
+
+  input#pizza-number{ 
+      width: 50%;
+      margin-bottom: 10px;
+ }
+
+ #hidden{
     display: none;
 }
+#Button{
+    display:none
+}
+.totals{
+    display: none;
+}
+.Items{
+    width: 50%;
+    text-align: center; 
+  }
+
 .footer{
     background-color: gray;
     padding: 2px;
@@ -107,3 +75,20 @@ form{
     padding: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+ 
+  
+ 
+ 
+  
+
+ 
+ 
